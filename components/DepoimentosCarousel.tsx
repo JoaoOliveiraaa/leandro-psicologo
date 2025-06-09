@@ -26,7 +26,7 @@ export function DepoimentosCarousel() {
               rating: 5
             },
             {
-              text: "Para mim, o seu maior diferencial  profissional são] As técnicas utilizadas para liberar emoções, ressignificar memórias.. não são apenas conversas, conseguimos chegar ao fundo do problema. Isso tem extrema importância",
+              text: "Para mim, o seu maior diferencial  profissional são As técnicas utilizadas para liberar emoções, ressignificar memórias.. não são apenas conversas, conseguimos chegar ao fundo do problema. Isso tem extrema importância",
               name: "C.X.",
               rating: 5
             },
