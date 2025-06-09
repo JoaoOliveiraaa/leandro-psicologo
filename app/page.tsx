@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
+import { DepoimentosCarousel } from "@/components/DepoimentosCarousel"
 import {
   Heart,
   Brain,
@@ -68,7 +69,7 @@ export default function PsicologoLanding() {
               </div>
               <Button asChild className="bg-accent hover:bg-accent-600 text-white font-bold md:hidden">
                 <Link href="https://wa.me/5567992619987" target="_blank">
-                  <Phone className="w-4 h-4 mr-2" />
+                   <MessageCircle className="w-5 h-5 mr-2" />
                   AGENDE SUA CONSULTA
                 </Link>
               </Button>
@@ -92,7 +93,7 @@ export default function PsicologoLanding() {
             </nav>
             <Button asChild className="bg-accent hover:bg-accent-600 text-white font-bold hidden md:flex">
               <Link href="https://wa.me/5567992619987" target="_blank">
-                <Phone className="w-4 h-4 mr-2" />
+              <MessageCircle className="w-5 h-5 mr-2" />
                 AGENDE SUA CONSULTA
               </Link>
             </Button>
@@ -106,21 +107,21 @@ export default function PsicologoLanding() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-primary-100 text-primary hover:bg-primary-200">
-                  ✨ Cuidando da sua saúde emocional
-                </Badge>
+             
+                <div className="text-lg text-primary font-medium">CRP 14/07892-7</div>
                 <h1 className="text-4xl lg:text-6xl font-bold text-dark leading-tight">
                   Psicólogo
                   <span className="text-primary"> Leandro Nonato Ramalho</span>
                 </h1>
-                <div className="text-lg text-primary font-medium mb-4">CRP 14/07892-7</div>
+                 <p className="text-lg text-primary">
+                  Atendimento presencial em Campo Grande - MS e online para todo o Brasil.
+                </p>
+                
                 <p className="text-xl text-dark-600 leading-relaxed">
                   Se você busca um espaço onde possa se sentir à vontade para ser quem você é, sem julgamentos, e
                   encontrar um caminho para lidar com suas questões, seja bem-vindo.
                 </p>
-                <p className="text-lg text-primary">
-                  Atendimento presencial em Campo Grande - MS e online para todo o Brasil.
-                </p>
+               
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
@@ -129,9 +130,7 @@ export default function PsicologoLanding() {
                     AGENDE SUA CONSULTA
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary-50 font-bold">
-                  Saiba Mais
-                </Button>
+              
               </div>
               <div className="flex items-center space-x-8 pt-4">
                 <div className="text-center">
@@ -352,8 +351,11 @@ export default function PsicologoLanding() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary-50 font-bold">
-              Conheça os diferenciais
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary-50 font-bold">
+              <Link href="https://wa.me/5567992619987" target="_blank">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                AGENDE SUA CONSULTA
+              </Link>
             </Button>
           </div>
         </div>
@@ -369,21 +371,16 @@ export default function PsicologoLanding() {
               Histórias reais de transformação e crescimento pessoal.
             </p>
           </div>
-          <div className="text-center">
-            <Card className="border-primary-100 max-w-2xl mx-auto">
-              <CardContent className="pt-6">
-                <p className="text-dark-600 mb-6 italic text-lg">
-                  "Espaço para inserção de relatos reais de pacientes, retirados do Google Meu Negócio ou outros canais
-                  autorizados."
-                </p>
-                <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-primary">Depoimentos em breve...</p>
-              </CardContent>
-            </Card>
+          
+          <DepoimentosCarousel />
+
+          <div className="text-center mt-8">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
+              <Link href="https://wa.me/5567992619987" target="_blank">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                AGENDE SUA CONSULTA
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -393,9 +390,9 @@ export default function PsicologoLanding() {
         <div className="container mx-auto max-w-8xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl transform rotate"></div>
+              <div className="absolute inset-16 bg-gradient-to-r from-primary to-secondary rounded-2xl transform rotate"></div>
               <Image
-                src="/leandrosobremim.png?height=500&width=400"
+                src="/leandrosobremim.jpg?height=500&width=400"
                 alt="Psicólogo Leandro Nonato Ramalho"
                 width={400}
                 height={600}
@@ -448,10 +445,10 @@ export default function PsicologoLanding() {
           <div className="text-center mb-16">
             <Badge className="bg-primary-100 text-primary mb-4">Perguntas Frequentes</Badge>
             <h2 className="text-4xl font-bold text-dark mb-8">Suas dúvidas, minhas respostas</h2>
-            <p className="text-xl text-dark-600 max-w-3xl mx-auto">
+            {/* <p className="text-xl text-dark-600 max-w-3xl mx-auto">
               Aqui estão algumas das perguntas mais comuns que recebo sobre o processo terapêutico, atendimento e outros
               tópicos.
-            </p>
+            </p> */}
           </div>
           <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
             <AccordionItem value="item-1">
@@ -518,7 +515,7 @@ export default function PsicologoLanding() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary to-secondary">
+      {/* <section className="py-20 px-4 bg-gradient-to-r from-primary to-secondary">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Pronto para começar sua jornada de transformação?</h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
@@ -534,12 +531,12 @@ export default function PsicologoLanding() {
           
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-dark text-white py-12 px-4">
         <div className="container mx-auto max-w-8xl">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-8 mx-auto">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
@@ -547,25 +544,25 @@ export default function PsicologoLanding() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Leandro Nonato Ramalho</h3>
-                  <p className="text-primary-300">Psicólogo - CRP 14/07892-7</p>
+                  <p className="text-white">Psicólogo - CRP 14/07892-7</p>
                 </div>
               </div>
-              <p className="text-primary-300">Cuidando da sua saúde mental com profissionalismo e humanização.</p>
+              <p className="text-white">Cuidando da sua saúde mental com profissionalismo e humanização.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contato</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span className="text-primary-300">[inserir número]</span>
+                  <span className="text-white">+55 67 99261-9987</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span className="text-primary-300">contato@leandrononato.psi.br</span>
+                  <span className="text-white">contato@leandrononato.psi.br</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <MapPin className="w-4 h-4 text-primary" />
-                  <span className="text-primary-300">
+                  <MapPin className="w-9 h-9 text-primary" />
+                  <span className="text-white">
                     Rua Raul Pires Barbosa, 1119, Chácara Cachoeira, Campo Grande - MS
                   </span>
                 </div>
@@ -577,7 +574,7 @@ export default function PsicologoLanding() {
                 <Link
                   href="https://www.instagram.com/leandrononato.psi"
                   target="_blank"
-                  className="flex items-center space-x-3 text-primary-300 hover:text-white transition-colors"
+                  className="flex items-center space-x-3 text-white hover:text-white transition-colors"
                 >
                   <Instagram className="w-4 h-4" />
                   <span>@leandrononato.psi</span>
@@ -585,7 +582,7 @@ export default function PsicologoLanding() {
                 <Link
                   href="https://www.facebook.com/leandrononato.psi"
                   target="_blank"
-                  className="flex items-center space-x-3 text-primary-300 hover:text-white transition-colors"
+                  className="flex items-center space-x-3 text-white hover:text-white transition-colors"
                 >
                   <Facebook className="w-4 h-4" />
                   <span>Leandro Nonato Ramalho</span>
@@ -593,21 +590,24 @@ export default function PsicologoLanding() {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Especialidades</h4>
-              <div className="space-y-2 text-primary-300">
-                <p>Ansiedade e Depressão</p>
-                <p>Terapia de Casal</p>
-                <p>Traumas e Luto</p>
-                <p>Questões Existenciais</p>
+              <h4 className="font-semibold mb-4">Desenvolvido por</h4>
+              <div className="flex items-center space-x-2">
+                <Image
+                  src="/logohwbranco.png"
+                  alt="HW - Desenvolvimento Web"
+                  width={120}
+                  height={36}
+                  className="h-14 w-auto"
+                />
               </div>
             </div>
           </div>
-          <div className="border-t border-dark-600 mt-8 pt-8 text-center">
-            <p className="text-primary-300">
+          <div className="border-t border-dark-600 mt-8 pt-8 flex flex-col items-center">
+            <p className="text-white text-center">
               © {new Date().getFullYear()} Leandro Nonato Ramalho - Psicólogo. Todos os direitos reservados.
             </p>
-            <p className="text-primary-400 text-sm mt-2">
-              CRP 14/07892-7 | Desenvolvido com cuidado para cuidar de você.
+            <p className="text-primary-400 text-sm mt-2 text-center">
+              CRP 14/07892-7 
             </p>
           </div>
         </div>
