@@ -538,15 +538,13 @@ export default function PsicologoLanding() {
         <div className="container mx-auto max-w-8xl">
           <div className="grid md:grid-cols-4 gap-8 mx-auto">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                  <Brain className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Leandro Nonato Ramalho</h3>
-                  <p className="text-white">Psicólogo - CRP 14/07892-7</p>
-                </div>
-              </div>
+              <Image
+                src="/logoleandro.png"
+                alt="Logo Leandro Nonato Ramalho"
+                width={160}
+                height={120}
+                className="w-52 h-auto max-w-full object-contain bg-transparent"
+              />
               <p className="text-white">Cuidando da sua saúde mental com profissionalismo e humanização.</p>
             </div>
             <div>
@@ -558,7 +556,7 @@ export default function PsicologoLanding() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span className="text-white">contato@leandrononato.psi.br</span>
+                  <span className="text-white">Nonatoleandro01@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-9 h-9 text-primary" />

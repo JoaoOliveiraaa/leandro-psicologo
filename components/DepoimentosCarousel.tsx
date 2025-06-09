@@ -21,28 +21,33 @@ export function DepoimentosCarousel() {
         <div className="flex -mx-4">
           {[
             {
-              text: "O atendimento do Leandro mudou minha vida. Sua abordagem acolhedora e profissional me ajudou a superar momentos difíceis e encontrar um novo sentido para minha vida.",
-              name: "Maria Silva",
+              text: "Após 10 meses de acompanhamento, tenho uma aceitação melhor das situações e consigo permanecer mais calmo diante dos problemas, buscando a melhor forma de resolvê-los ou aceitá-los. Alguns traumas de infância foram curados, impactando positivamente na minha autoestima e aumentando a felicidade com a vida presente.",
+              name: "R.N.A.",
               rating: 5
             },
             {
-              text: "Nunca imaginei que a terapia online poderia ser tão efetiva. O Leandro consegue criar um ambiente seguro mesmo à distância, e suas técnicas são realmente transformadoras.",
-              name: "João Santos",
+              text: "Para mim, o seu maior diferencial  profissional são] As técnicas utilizadas para liberar emoções, ressignificar memórias.. não são apenas conversas, conseguimos chegar ao fundo do problema. Isso tem extrema importância",
+              name: "C.X.",
               rating: 5
             },
             {
-              text: "Como empreendedor, sempre tive dificuldades com ansiedade. O trabalho do Leandro me ajudou a desenvolver ferramentas práticas para lidar com o estresse do dia a dia.",
-              name: "Pedro Oliveira",
+              text: "como você descreveria o meu trabalho para outra pessoa que pudesse se beneficiar dele? Que você vai na raiz dos problemas de infância e isso muda 100% o comportamento e a forma como vemos o mundo como adultos. Não é um processo fácil, mas vale e muito a pena pra quem busca consciência e cura!",
+              name: "J.F.",
               rating: 5
             },
             {
-              text: "A terapia com o Leandro me ajudou a superar um luto muito difícil. Sua sensibilidade e profissionalismo foram fundamentais nesse processo.",
-              name: "Ana Costa",
+              text: "como você descreveria o meu trabalho para outra pessoa que pudesse se beneficiar dele? Descreveria q a forma de abordagem e as técnicas propiciam resultados reais.",
+              name: "C.C.A",
               rating: 5
             },
             {
-              text: "Depois de anos tentando diferentes abordagens, encontrei no Leandro um profissional que realmente entende as questões masculinas. Recomendo fortemente!",
-              name: "Carlos Mendes",
+              text: "Incrível e completo, trabalha a emoção e acaba por aliviar sintomas físicos e psicossomáticos",
+              name: "G.N.A",
+              rating: 5
+            },
+            {
+              text: "Excelente psicologo, humano e profissional! Me ajudou nos momentos que eu mais precisar, e principalmente a lidar com meus conflitos internos, sempre indico ele! Sou grata pelo seu trabalho Doutor!",
+              name: "Eloyna Perdoncini",
               rating: 5
             }
           ].map((depoimento, index) => (
