@@ -142,8 +142,8 @@ export default function PsicologoLanding() {
                   <div className="text-sm text-primary">Anos de Terapia Pessoal</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-dark">100%</div>
-                  <div className="text-sm text-primary">Dedicação</div>
+                  <div className="text-2xl font-bold text-dark">+12.000 Horas</div>
+                  <div className="text-sm text-primary">de Atendimentos Realizados</div>
                 </div>
               </div>
             </div>
@@ -477,7 +477,7 @@ export default function PsicologoLanding() {
                 Quais são as formas de pagamento?
               </AccordionTrigger>
               <AccordionContent className="text-dark-600 text-base leading-relaxed">
-                Aceito diversas formas de pagamento, incluindo PIX, transferência bancária e cartão de crédito. Os detalhes
+                Aceito diversas formas de pagamento, incluindo PIX, transferência bancária e boleto. Os detalhes
                 são combinados individualmente para maior comodidade.
               </AccordionContent>
             </AccordionItem>
