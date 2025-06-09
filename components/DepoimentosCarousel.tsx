@@ -49,6 +49,11 @@ export function DepoimentosCarousel() {
               text: "Excelente psicologo, humano e profissional! Me ajudou nos momentos que eu mais precisar, e principalmente a lidar com meus conflitos internos, sempre indico ele! Sou grata pelo seu trabalho Doutor!",
               name: "Eloyna Perdoncini",
               rating: 5
+            },
+            {
+              text: "Profissional de excelência, assertivo nas análises e observações que são pontuadas com sensibilidade e empatia. Super recomendo.",
+              name: "Simara Mineto",
+              rating: 5
             }
           ].map((depoimento, index) => (
             <div key={index} className="min-w-full px-4">
