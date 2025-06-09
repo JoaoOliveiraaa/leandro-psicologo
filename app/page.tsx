@@ -67,7 +67,7 @@ export default function PsicologoLanding() {
                   priority
                 />
               </div>
-              <Button asChild className="bg-accent hover:bg-accent-600 text-white font-bold md:hidden">
+              <Button asChild className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold md:hidden">
                 <Link href="https://wa.me/5567992619987" target="_blank">
                    <MessageCircle className="w-5 h-5 mr-2" />
                   AGENDE SUA CONSULTA
@@ -91,7 +91,7 @@ export default function PsicologoLanding() {
                 FAQ
               </Link>
             </nav>
-            <Button asChild className="bg-accent hover:bg-accent-600 text-white font-bold hidden md:flex">
+            <Button asChild className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold hidden md:flex">
               <Link href="https://wa.me/5567992619987" target="_blank">
               <MessageCircle className="w-5 h-5 mr-2" />
                 AGENDE SUA CONSULTA
@@ -124,7 +124,7 @@ export default function PsicologoLanding() {
                
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
+                <Button asChild size="lg" className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold">
                   <Link href="https://wa.me/5567992619987" target="_blank">
                     <MessageCircle className="w-5 h-5 mr-2" />
                     AGENDE SUA CONSULTA
@@ -258,7 +258,7 @@ export default function PsicologoLanding() {
               <strong>Atendimento Flexível:</strong> Consultas presenciais em Campo Grande - MS e online para qualquer
               lugar do Brasil.
             </p>
-            <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
+            <Button asChild size="lg" className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold">
               <Link href="https://wa.me/5567992619987" target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 AGENDE SUA CONSULTA
@@ -375,7 +375,7 @@ export default function PsicologoLanding() {
           <DepoimentosCarousel />
 
           <div className="text-center mt-8">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
+            <Button asChild size="lg" className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold">
               <Link href="https://wa.me/5567992619987" target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 AGENDE SUA CONSULTA
@@ -428,7 +428,7 @@ export default function PsicologoLanding() {
                 a encontrar suas próprias respostas, entre em contato.
               </p>
              
-              <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
+              <Button asChild size="lg" className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold">
                 <Link href="https://wa.me/5567992619987" target="_blank">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   AGENDE SUA CONSULTA
@@ -504,7 +504,7 @@ export default function PsicologoLanding() {
             </AccordionItem>
           </Accordion>
           <div className="text-center mt-8">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent-600 text-white font-bold">
+            <Button asChild size="lg" className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold">
               <Link href="https://wa.me/5567992619987" target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 AGENDE SUA CONSULTA
