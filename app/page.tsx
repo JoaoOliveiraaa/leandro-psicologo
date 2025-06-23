@@ -63,14 +63,14 @@ export default function PsicologoLanding() {
                   alt="Logo Leandro Nonato Ramalho"
                   width={160}
                   height={120}
-                  className="w-40 md:w-36 lg:w-48 h-auto max-w-full object-contain bg-transparent"
+                  className="w-52 md:w-36 lg:w-48 h-auto max-w-full object-contain bg-transparent"
                   priority
                 />
               </div>
-              <Button asChild className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold md:hidden">
+              <Button asChild className="bg-whatsapp hover:bg-whatsapp-600 text-white font-bold px-2 py-1 text-xs md:px-6 md:py-3 md:text-base md:hidden">
                 <Link href="https://wa.me/5567992619987" target="_blank">
-                   <MessageCircle className="w-5 h-5 mr-2" />
-                  AGENDE SUA CONSULTA
+                   <MessageCircle className="w-4 h-4 mr-1" />
+                  AGENDAR CONSULTA
                 </Link>
               </Button>
             </div>
@@ -102,7 +102,7 @@ export default function PsicologoLanding() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-[#5FA6DA]/20 via-transparent to-[#3A71A3]/15">
+      <section className="py-10 md:py-20 px-4 bg-gradient-to-r from-[#5FA6DA]/20 via-transparent to-[#3A71A3]/15">
         <div className="container mx-auto max-w-8xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -113,14 +113,12 @@ export default function PsicologoLanding() {
                   Psicólogo
                   <span className="text-primary"> Leandro Nonato Ramalho</span>
                 </h1>
-                 <p className="text-lg text-primary">
-                  Atendimento presencial em Campo Grande - MS e online para todo o Brasil.
-                </p>
+                 <p className="text-lg text-primary"><strong>Atendimento Presencial em Campo Grande MS - ONLINE para todo Brasil.</strong></p>
                 
-                <p className="text-xl text-dark-600 leading-relaxed">
+               {/* <p className="text-xl text-dark-600 leading-relaxed">
                   Se você busca um espaço onde possa se sentir à vontade para ser quem você é, sem julgamentos, e
                   encontrar um caminho para lidar com suas questões, seja bem-vindo.
-                </p>
+                </p> */}
                
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -543,7 +541,7 @@ export default function PsicologoLanding() {
                 alt="Logo Leandro Nonato Ramalho"
                 width={160}
                 height={120}
-                className="w-52 h-auto max-w-full object-contain bg-transparent"
+                className="w-52 md:w-36 lg:w-48 h-auto max-w-full object-contain bg-transparent"
               />
               <p className="text-white">Cuidando da sua saúde mental com profissionalismo e humanização.</p>
             </div>
